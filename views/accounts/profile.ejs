@@ -1,0 +1,85 @@
+
+	<div class="upperProfile">
+		<% if (message.length > 0) { %>
+            <div class="success" role="alert">
+				<span><strong>Update!</strong> <%= message %></span>
+                <i class="fa fa-times successclose" aria-hidden="true" onclick="fadeAfter()"></i>
+                </button>
+            </div>
+           <% } %>
+		<div class="sideflow">
+			<img src="images/images.jpeg" alt="<%= user.profile.picture %>">
+			<input type="file" accept="image/*" name="" id="file">
+			<label for="file"><i class="fa fa-upload" aria-hidden="true"></i>Choose Photo</label>
+			<div class="email1">
+				<i class="fa fa-envelope" aria-hidden="true"></i>
+				<p><%= user.email %></p>
+			</div>
+		</div>
+		<div class="mainflow">
+		  <form action="" method="post">
+			<div class="username1">
+				<i class="fa fa-user" aria-hidden="true"></i>
+				<input type="text" name="username" value="<%= user.profile.name %>" id="" aria-required="true">
+			</div>
+			<div class="phonenumber1">
+				<i class="fa fa-mobile" aria-hidden="true"></i>
+				<input type="tel" name="phoneNumber" id="" value="<%= user.phoneNumber %>" required>
+			</div>
+			<div class="seperator"></div>
+			<div class="addressform">
+						<div class="addressdiv">
+							<label for="addressline">Line 1</label>
+							<input type="text" name="address" value="<%= user.address %>" id="addressline">
+						</div>
+						<div class="city1div">
+							<label for="city1">City</label>
+							<input type="text" name="city" value="<%= user.city %>" id="city1" required>
+						</div>
+						<div class="districtdiv">
+							<label for="district">District</label>
+							<input type="text" name="district" value="<%= user.city %>" id="district" required>
+						</div>
+						<div class="pincodediv">
+							<label for="pincode">Pincode</label>
+							<input type="text" name="pincode" value="<%= user.postcode%>" id="pincode" required>
+						</div>
+						<input type="submit" class="btn btn-success" value="Update">
+					
+			</div>
+			</form>
+		</div>
+		<!-- <div>
+			<h2 class="text-center" id="heading">History</h2>
+			<table class="table table-striped sticky-header">
+				<thead>
+					<tr>
+						<th>Item Name</th>
+						<th>Paid: </th>
+					</tr>
+					<tbody>
+						<% for (var i = 0; i < user.history.length ; i++) { %>
+						<tr>
+							<td><%= user.history[i].item.name %></td>
+							<td>$ <%= user.history[i].paid %></td>
+						</tr>
+						<%}%>
+					</tbody>
+				</thead>
+			</table>
+		</div> -->
+	</div>
+	<div class="orderProfile">
+		<div class="container1">
+			<h1>Orders</h1>
+			<a href="">
+				<div class="orderouter">
+						<img src="img/bg-img/47.png" alt="">
+						<h3>Cactus Plant</h5>
+						<h4>12/12/2019</h4>
+						<p class="cost">&#8377; 200</p>
+						<p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates rerum autem temporibus iure repellat amet reiciendis atque doloribus aliquam ea qui nisi, aspernatur rem sunt voluptatibus, neque suscipit, eaque facilis!</p>
+				</div>
+			</a>
+		</div>
+	</div>

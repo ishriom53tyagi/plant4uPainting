@@ -1,0 +1,59 @@
+
+<div class="signup">
+<% if (errors.length > 0) { %>
+		<div class="error" role="alert">
+		<span id="error-signup"><strong>Error!</strong> <%= errors %></span>
+  			<i class="fa fa-times errorclose" aria-hidden="true" onclick="fadeAfter()"></i>
+		</div>
+	<% } %>
+	<div class="Uppercontain">
+	<div class="loginClass">
+			<h3><b>Log In</b></h3>
+					<form action="/user/login" method="POST">
+					<input type="email" id="inputEmail" name="email"  placeholder="Email address" required autofocus>
+					<input type="password" id="inputPassword" name="password" placeholder="Password" required>
+					<a href=""><small>Forget Password?</small></a>
+				<button type="submit">Sign in</button>
+			</form>
+			<div class="seperation"></div>
+				
+	</div>
+	<div class="contain">
+	<h3><b>Create New Account.!</b></h3>
+	<p>Fill the form to enjoy out service</p>
+		<form action="" method="post" id="signUpForm" class="">
+			<div class="signinput">
+					<input type="text" class="" name="name" placeholder="Full Name" required="required">
+			</div>
+			<div class="signinput">
+					<input type="email" name="email" placeholder="Email"  required="required">
+			</div>
+			<div class="signinput">
+				<input type="number" name="phoneNumber" placeholder="phoneNumber"  required="required">
+			</div>
+			<div class="signinput">
+				<input type="number" name="Account" placeholder="Account Number"  required="required">
+			</div>
+			<div class="signinput">
+				<input type="text" name="ifsc" placeholder="IFSC CODE"  required="required">
+			</div>	
+			<div class="signinput">
+					<input type="password" name="password" placeholder="Password" required="required">
+			</div>
+			<div class="signinput">
+					<input type="password" name="confirm_password" placeholder="Confirm Password"  required="required">
+			</div>
+			<input type="checkbox" name="terms" id=""> I accept the <a href="">Terms of use</a> & <a href="">Privacy Policy</a>
+			<div class="signbutton">
+			<input type="submit" class="btn" value="Signup">
+			Create New Account.!
+			
+			Fill the form to enjoy out service
+			I accept the Terms of use & Privacy Policy
+			
+		</div>
+		</form>
+	</div>
+</div>
+
+</div>
