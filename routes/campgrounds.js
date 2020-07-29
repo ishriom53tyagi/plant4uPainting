@@ -20,9 +20,9 @@ var upload = multer({ storage: storage, fileFilter: imageFilter})
 
 var cloudinary = require('cloudinary');
 cloudinary.config({ 
-  cloud_name: 'plan4upainting', 
-  api_key: '984459182261487', 
-  api_secret: 'niX34zAKb3tFLIJ33vI29mcZjxg'
+  cloud_name: '', 
+  api_key: '', 
+  api_secret: ''
 });
 
 //INDEX - show all campgrounds
